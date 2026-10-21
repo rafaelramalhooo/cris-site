@@ -1,0 +1,14 @@
+# Nunca vão para o repositório público
+.env
+*.env
+config-exemplo.txt
+*.eml
+fichas-preenchidas/
+legado-local/
+DECISOES.md
+GUIA-*.md
+dev/
+node_modules/
+.DS_Store
+
+manter-ativo.yml.txt

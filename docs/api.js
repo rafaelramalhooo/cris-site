@@ -9,7 +9,8 @@
   function configurado() {
     return !!cfg.SUPABASE_URL && !/SEU-PROJETO/.test(cfg.SUPABASE_URL) && !!cfg.SUPABASE_KEY && !/COLE_AQUI/.test(cfg.SUPABASE_KEY);
   }
-  function base() { return String(cfg.SUPABASE_URL || '').replace(/\/+$/, ''); }
+  // usa só o endereço principal (ignora qualquer "/rest/v1/" colado a mais no config.js)
+  function base() { var m = /^(https?:\/\/[^\/]+)/.exec(String(cfg.SUPABASE_URL || '').trim()); return m ? m[1] : ''; }
 
   /* ---------- erros ---------- */
   var MENSAGENS = {
