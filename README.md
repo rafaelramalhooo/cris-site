@@ -1,10 +1,22 @@
-# Ficha de Anamnese · Cris Ferreira Nail Designer
+# Cris Ferreira · Nail Designer
 
-Site da ficha de anamnese (clientes) e área restrita (Cris e Rafael).
+Site da **ficha de anamnese** da Cris Ferreira, nail designer.
 
-- `docs/`: o site (publicado pelo GitHub Pages). `docs/index.html` é a ficha da cliente; `docs/admin/` é a área restrita.
-- `sql/`: scripts do banco de dados (Supabase). Rodar na ordem 01, 02, 03, 04 e, por fim, 99 (testes).
-- `.github/workflows/`: tarefa semanal que mantém o banco ativo.
+## O que é
+Uma ficha de saúde e histórico que as clientes preenchem pelo celular antes do atendimento, para que a Cris cuide das unhas com segurança.
 
-Este repositório é público e **não contém dados de clientes nem senhas**: apenas o código e a chave pública do Supabase.
-Os dados ficam no banco e só os administradores cadastrados conseguem lê-los.
+## Como funciona
+- **Clientes:** abrem o site, preenchem a ficha em poucos minutos, assinam na tela e podem salvar a própria cópia em PDF.
+- **Cris e Rafael:** entram em uma área restrita, com e-mail e senha, para ver as fichas recebidas, imprimir ou salvar em PDF.
+- **Ninguém mais** consegue ver as fichas. Não existe cadastro público: as duas contas de acesso são criadas manualmente.
+
+## Privacidade
+As fichas têm dados de saúde e seguem a LGPD. Este repositório contém **apenas o código do site**: nenhum dado de cliente e nenhuma senha. As fichas ficam guardadas em um banco de dados protegido.
+
+## Organização
+- `docs/`: o site (publicado pelo GitHub Pages).
+- `sql/`: a configuração do banco de dados.
+- `.github/`: tarefa automática que mantém o banco ativo.
+
+## Uso
+Projeto de uso particular. Todos os direitos reservados: o código não pode ser copiado nem reutilizado sem autorização.
