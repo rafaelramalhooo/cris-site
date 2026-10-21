@@ -1,0 +1,34 @@
+.barra-usuario{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;align-items:center;padding:6px 16px;background:#f1ede0;border-bottom:1px solid var(--borda);font-size:14px;color:var(--suave)}
+.barra-usuario nav{display:flex;gap:4px}
+.barra-usuario .link{padding:6px 8px;min-height:36px;font-size:14px}
+input[type=password],input[type=search]{width:100%;min-height:50px;padding:12px 14px;font:inherit;color:var(--texto);background:#fff;border:1.5px solid var(--borda);border-radius:var(--raio)}
+input[type=password]:focus,input[type=search]:focus{outline:3px solid rgba(183,155,94,.45);border-color:var(--dourado-esc)}
+.lembrar{margin:0 0 16px}
+.lembrar span{font-size:15px}
+.busca{margin:0 0 6px}
+.lista{display:grid;gap:10px;margin:8px 0 16px}
+.cartao{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:#fff;border:1.5px solid var(--borda);border-radius:var(--raio);padding:12px 14px;cursor:pointer}
+.cartao:hover,.cartao:focus-visible{border-color:var(--verde);outline:none;box-shadow:0 0 0 3px rgba(183,155,94,.35)}
+.cartao.nova{border-left:6px solid var(--dourado)}
+.cartao .nome{font-weight:700;display:block}
+.cartao .meta{font-size:14px;color:var(--suave);display:block;margin-top:2px}
+.selos{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px;justify-content:center}
+.selo{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.03em;padding:2px 9px;border-radius:99px;margin-top:6px;margin-right:6px;background:#eee;color:#444}
+.selos .selo{margin:0}
+.selo.nova{background:var(--dourado);color:#fff}
+.selo.atencao{background:#fff1d6;color:#8a5a00;border:1px solid #e3c47d}
+.selo.menor{background:#e4eefb;color:#1f4a86}
+.voltar{padding-left:0}
+.btn-link{display:flex;align-items:center;justify-content:center;text-decoration:none}
+.perigo{color:var(--erro)}
+.termos-lista{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:15px}
+.ass-box{background:#fff;border:1.5px solid var(--borda);border-radius:var(--raio);padding:10px;text-align:center}
+.ass-box img{max-width:100%;height:auto;max-height:140px}
+code{word-break:break-all}
+.rodape-lista{text-align:center;margin-top:18px}
+.dialogo{border:0;border-radius:var(--raio);padding:20px;max-width:420px;width:calc(100% - 32px);background:var(--creme);color:var(--texto);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.dialogo::backdrop{background:rgba(20,30,20,.55)}
+.dialogo h2{font-size:21px}
+.dlg-nome{font-weight:700}
+.perigo-btn{background:var(--erro);border-color:var(--erro);color:#fff}
+.status.neutra{background:#f1ede0;color:var(--suave)}
